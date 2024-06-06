@@ -12,7 +12,7 @@
 
 <body class="bg-[#0B081C] pb-16 max-sm:pb-8">
     <div class="bg-[url('./img/bg.png')] bg-no-repeat bg-cover bg-center px-8 pt-6 mb-32 max-lg:px-5 max-lg:pt-4 max-sm:px-2.5 max-sm:pt-2.5 max-sm:mb-24">
-        <header class="bg-[#0B081C]/50 flex justify-between items-center px-8 py-4 rounded-3xl max-lg:px-6 max-lg:py:3 max-md:px-4 max-md:py-2.5 max-md:rounded-xl fixed z-50 left-1/2 -translate-x-1/2 backdrop-blur-md w-[96%]">
+        <header class="header bg-[#0B081C]/50 flex justify-between items-center px-8 py-4 rounded-3xl max-lg:px-6 max-lg:py:3 max-md:px-4 max-md:py-2.5 max-md:rounded-xl fixed z-50 backdrop-blur-md w-[96%]">
             <div class="max-sm:w-[120px] max-xs:w-[90px]">
                 <img src="./src/img/logo.png" alt="Logo du site">
             </div>
@@ -26,7 +26,7 @@
             <button class="bg-[#ECECEC] text-[#0B081C] py-2 px-6 rounded-full max-md:text-xs max-md:py-1.5 max-md:px-4 hover:scale-105 transition-transform max-sm:hidden">Download the app</button>
         </header>
         <section class="flex flex-col justify-center items-center text-center gap-20 max-w-[960px] mx-auto pb-4 pt-[200px] max-md:pt-[150px] max-md:gap-16 max-sm:pt-[125px] max-xs:pt-[100px] max-xs:gap-12">
-            <div class="flex flex-col justify-center items-center gap-6">
+            <div class="hero-text flex flex-col justify-center items-center gap-6">
                 <a href="#" class="text-[#F2F4F8] py-2 px-6 rounded-full border-solid border border-white/30 max-lg:text-sm max-sm:text-xs max-sm:px-4">We just raised $20M in Series B. Learn more</a>
                 <div>
                     <h1 class="inline font-medium text-7xl text-transparent bg-clip-text bg-gradient-to-br from-[#ECECEC] to-[#ECECEC]/70 max-lg:text-[50px] max-sm:text-[40px] max-xs:text-3xl">Modern analytics</h1>
@@ -39,7 +39,7 @@
                     <button class="border text-[#ECECEC] py-2.5 px-6 rounded-full transition-transform hover:scale-105 max-lg:text-sm max-sm:text-xs max-sm:py-2 max-sm:px-4">Talk to an expert</button>
                 </div>
             </div>
-            <div class="min-w-[600px] max-lg:w-[80%] max-md:w-[90%] max-md:min-w-[300px] max-xs:w-full">
+            <div class="hero-img min-w-[600px] max-lg:w-[80%] max-md:w-[90%] max-md:min-w-[300px] max-xs:w-full">
                 <img src="./src/img/imgHero.png" alt="Présentation du produit" class="rounded-3xl hero-shadow max-md:rounded-2xl max-xs:rounded-xl">
             </div>
         </section>
@@ -47,35 +47,35 @@
     <section class="flex flex-col justify-center items-center mb-28 px-5">
         <h2 class="text-white/80 text-center leading-6 mb-10">Trusted by teams at over 1,000 of the world's leading organizations</h2>
         <ul class="flex justify-center items-center flex-wrap gap-x-12 gap-y-6">
-            <li><img src="./src/img/brands/dell.png" alt="Logo de la marque Dell"></li>
-            <li><img src="./src/img/brands/zendesk.png" alt="Logo de la marque Zendesk"></li>
-            <li><img src="./src/img/brands/rakuten.png" alt="Logo de la marque Rakuten"></li>
-            <li><img src="./src/img/brands/pacific.png" alt="Logo de la marque Pacific funds"></li>
-            <li><img src="./src/img/brands/ncr.png" alt="Logo de la marque NCR"></li>
-            <li><img src="./src/img/brands/lattice.png" alt="Logo de la marque Lattice"></li>
-            <li><img src="./src/img/brands/ted.png" alt="Logo de la marque Ted"></li>
+            <li class="brand"><img src="./src/img/brands/dell.png" alt="Logo de la marque Dell"></li>
+            <li class="brand"><img src="./src/img/brands/zendesk.png" alt="Logo de la marque Zendesk"></li>
+            <li class="brand"><img src="./src/img/brands/rakuten.png" alt="Logo de la marque Rakuten"></li>
+            <li class="brand"><img src="./src/img/brands/pacific.png" alt="Logo de la marque Pacific funds"></li>
+            <li class="brand"><img src="./src/img/brands/ncr.png" alt="Logo de la marque NCR"></li>
+            <li class="brand"><img src="./src/img/brands/lattice.png" alt="Logo de la marque Lattice"></li>
+            <li class="brand"><img src="./src/img/brands/ted.png" alt="Logo de la marque Ted"></li>
         </ul>
     </section>
-    <section class="mb-28 text-center max-w-lg mx-auto relative after-halo max-sm:px-5">
+    <section class="features mb-28 text-center max-w-lg mx-auto relative after-halo max-sm:px-5">
         <h2 class="mb-7 text-[#ECECEC] font-medium text-5xl px-7 leading-tight max-sm:text-4xl max-sm:max-w-[370px] max-sm:mx-auto max-sm:leading-[3rem]">Features that work for your future.</h2>
         <p class="text-[#ECECEC] text-lg max-sm:text-base max-sm:max-w-[460px] max-sm:mx-auto">Check out our amazing features and experience the power of Vaultflow for yourself.</p>
     </section>
     <section class="flex flex-col justify-center items-center gap-20 mb-32 w-[80%] mx-auto max-sm:w-[90%]">
         <div class="flex justify-center gap-6 w-full max-lg:flex-col">
-            <div class="p-[60px] rounded-[20px] add-shadow w-[48%] bg-gradient-to-b from-white/5 to-white/0 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+            <div class="card card-1 p-[60px] rounded-[20px] add-shadow w-[48%] bg-gradient-to-b from-white/5 to-white/0 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
                 <img src="./src/img/icon/blue.png" alt="" class="max-xs:h-10 max-xs:w-10">
                 <h3 class="text-[#ECECEC] my-4 font-medium text-[32px] max-md:text-2xl max-xs:text-xl">Analytics Dashboard</h3>
                 <p class="text-[#ECECEC] text-sm mb-7 leading-[23px] max-xs:text-xs max-xs:leading-5">Our Analytics Dashboard provides a clear and intuitive interface for you to easily analyze your data. From customizable graphs to real-time data updates, our dashboard offers everything you need to gain valuable insights.</p>
                 <a href="#" class="text-white text underline decoration-1 underline-offset-2 max-xs:text-sm">View dashboard</a>
             </div>
-            <div class="p-[60px] rounded-[20px] add-shadow w-[48%] bg-gradient-to-b from-white/5 to-white/0 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+            <div class="card card-2 p-[60px] rounded-[20px] add-shadow w-[48%] bg-gradient-to-b from-white/5 to-white/0 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
                 <img src="./src/img/icon/purple.png" alt="" class="max-xs:h-10 max-xs:w-10">
                 <h3 class="text-[#ECECEC] my-4 font-medium text-[32px] max-md:text-2xl max-xs:text-xl">Digital Credit Tokens</h3>
                 <p class="text-[#ECECEC] text-sm mb-7 leading-[23px] max-xs:text-xs max-xs:leading-5">Reward your customers and incentivize engagement with our innovative digital credit tokens. Our tokens can be customized to match your branding, and are a flexible and scalable way to drive customer loyalty and encourage repeat business.</p>
                 <a href="#" class="text-white text underline decoration-1 underline-offset-2 max-xs:text-sm">View tokens</a>
             </div>
         </div>
-        <div class="p-[60px] rounded-[20px] add-shadow w-[98%] flex justify-between items-center bg-gradient-to-b from-white/5 to-white/0 max-2xl:flex-col max-2xl:gap-y-10 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+        <div class="card card-3 p-[60px] rounded-[20px] add-shadow w-[98%] flex justify-between items-center bg-gradient-to-b from-white/5 to-white/0 max-2xl:flex-col max-2xl:gap-y-10 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
             <div class="w-1/2 max-2xl:w-full">
                 <img src="./src/img/icon/pink.png" alt="" class="max-xs:h-10 max-xs:w-10">
                 <h3 class="text-[#ECECEC] my-4 font-medium text-[32px] max-md:text-2xl max-xs:text-xl">Code collaboration</h3>
@@ -86,7 +86,7 @@
                 <img src="./src/img/imgCode.png" alt="" class="rounded-[20px] add-shadow">
             </div>
         </div>
-        <div class="p-[60px] rounded-[20px] add-shadow w-full flex flex-col justify-center items-center text-center gap-6 bg-gradient-to-b from-white/5 to-white/0 max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+        <div class="card card-4 p-[60px] rounded-[20px] add-shadow w-full flex flex-col justify-center items-center text-center gap-6 bg-gradient-to-b from-white/5 to-white/0 max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
             <div class="w-[70%] mx-auto max-xl:w-[85%] max-lg:w-full">
                 <h3 class="text-[#ECECEC] font-bold text-5xl leading-snug mb-6 max-lg:text-4xl max-lg:max-w-[595px] max-lg:mx-auto max-md:text-3xl max-sm:text-2xl">Our powerful analytics provides invaluable insights.</h3>
                 <p class="text-[#ECECEC] text-lg max-md:text-base max-xs:text-sm max-xs:leading-5">Unlock the power of data with our cutting-edge analytics product. Get instant insights with our user-friendly Analytics Dashboard, and take advantage of our innovative digital credit tokens to reward your customers and incentivize engagement.</p>
@@ -129,7 +129,8 @@
             <img src="./src/img/logo.png" alt="">
         </div>
     </footer>
-    <div id="app"></div>
+    <script src="./script.js"></script>
+    <!-- <div id="app"></div> -->
 </body>
 
 </html>
