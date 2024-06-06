@@ -1,14 +1,134 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
     <title>Your first SaaS!</title>
 </head>
 
-<body>
+<body class="bg-[#0B081C] pb-16 max-sm:pb-8">
+    <div class="bg-[url('./img/bg.png')] bg-no-repeat bg-cover bg-center px-8 pt-6 mb-32 max-lg:px-5 max-lg:pt-4 max-sm:px-2.5 max-sm:pt-2.5 max-sm:mb-24">
+        <header class="bg-[#0B081C]/50 flex justify-between items-center px-8 py-4 rounded-3xl max-lg:px-6 max-lg:py:3 max-md:px-4 max-md:py-2.5 max-md:rounded-xl fixed z-50 left-1/2 -translate-x-1/2 backdrop-blur-md w-[96%]">
+            <div class="max-sm:w-[120px] max-xs:w-[90px]">
+                <img src="./src/img/logo.png" alt="Logo du site">
+            </div>
+            <nav>
+                <ul class="flex justify-center items-center gap-12 max-lg:gap-10 max-md:gap-8 max-sm:gap-6">
+                    <li class="text-[rgb(236,236,236,0.85)] transition cursor-pointer hover:text-[#ECECEC] hover:scale-110 max-md:text-sm max-sm:text-xs max-xs:scale-105">Features</li>
+                    <li class="text-[rgb(236,236,236,0.85)] transition cursor-pointer hover:text-[#ECECEC] hover:scale-110 max-md:text-sm max-sm:text-xs max-xs:scale-105">Pricing</li>
+                    <li class="text-[rgb(236,236,236,0.85)] transition cursor-pointer hover:text-[#ECECEC] hover:scale-110 max-md:text-sm max-sm:text-xs max-xs:scale-105">About us</li>
+                </ul>
+            </nav>
+            <button class="bg-[#ECECEC] text-[#0B081C] py-2 px-6 rounded-full max-md:text-xs max-md:py-1.5 max-md:px-4 hover:scale-105 transition-transform max-sm:hidden">Download the app</button>
+        </header>
+        <section class="flex flex-col justify-center items-center text-center gap-20 max-w-[960px] mx-auto pb-4 pt-[200px] max-md:pt-[150px] max-md:gap-16 max-sm:pt-[125px] max-xs:pt-[100px] max-xs:gap-12">
+            <div class="flex flex-col justify-center items-center gap-6">
+                <a href="#" class="text-[#F2F4F8] py-2 px-6 rounded-full border-solid border border-white/30 max-lg:text-sm max-sm:text-xs max-sm:px-4">We just raised $20M in Series B. Learn more</a>
+                <div>
+                    <h1 class="inline font-medium text-7xl text-transparent bg-clip-text bg-gradient-to-br from-[#ECECEC] to-[#ECECEC]/70 max-lg:text-[50px] max-sm:text-[40px] max-xs:text-3xl">Modern analytics</h1>
+                    <h2 class="font-medium text-7xl text-transparent bg-clip-text bg-gradient-to-br from-[#ECECEC] to-[#ECECEC]/30 max-lg:text-[50px] max-sm:text-[40px] max-xs:text-3xl">for the modern world</h2>
+                </div>
+                <p class="text-[#ECECEC]/65 max-w-lg text-lg leading-8 max-lg:text-base max-sm:text-sm max-sm:max-w-[450px] max-xs:text-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique. </p>
+                <div class="flex justify-center items-center gap-4">
+                    <button class="bg-[#ECECEC] text-[#0B081C] py-2.5 px-6 rounded-full transition-transform hover:scale-105 max-lg:text-sm max-sm:text-xs max-sm:py-2 max-sm:px-4">Download the app</button>
+                    <button class="border text-[#ECECEC] py-2.5 px-6 rounded-full transition-transform hover:scale-105 max-lg:text-sm max-sm:text-xs max-sm:py-2 max-sm:px-4">Talk to an expert</button>
+                </div>
+            </div>
+            <div class="min-w-[600px] max-lg:w-[80%] max-md:w-[90%] max-md:min-w-[300px] max-xs:w-full">
+                <img src="./src/img/imgHero.png" alt="Présentation du produit" class="rounded-3xl hero-shadow max-md:rounded-2xl max-xs:rounded-xl">
+            </div>
+        </section>
+    </div>
+    <section class="flex flex-col justify-center items-center mb-28 px-5">
+        <h2 class="text-white/80 text-center leading-6 mb-10">Trusted by teams at over 1,000 of the world's leading organizations</h2>
+        <ul class="flex justify-center items-center flex-wrap gap-x-12 gap-y-6">
+            <li><img src="./src/img/brands/dell.png" alt="Logo de la marque Dell"></li>
+            <li><img src="./src/img/brands/zendesk.png" alt="Logo de la marque Zendesk"></li>
+            <li><img src="./src/img/brands/rakuten.png" alt="Logo de la marque Rakuten"></li>
+            <li><img src="./src/img/brands/pacific.png" alt="Logo de la marque Pacific funds"></li>
+            <li><img src="./src/img/brands/ncr.png" alt="Logo de la marque NCR"></li>
+            <li><img src="./src/img/brands/lattice.png" alt="Logo de la marque Lattice"></li>
+            <li><img src="./src/img/brands/ted.png" alt="Logo de la marque Ted"></li>
+        </ul>
+    </section>
+    <section class="mb-28 text-center max-w-lg mx-auto relative after-halo max-sm:px-5">
+        <h2 class="mb-7 text-[#ECECEC] font-medium text-5xl px-7 leading-tight max-sm:text-4xl max-sm:max-w-[370px] max-sm:mx-auto max-sm:leading-[3rem]">Features that work for your future.</h2>
+        <p class="text-[#ECECEC] text-lg max-sm:text-base max-sm:max-w-[460px] max-sm:mx-auto">Check out our amazing features and experience the power of Vaultflow for yourself.</p>
+    </section>
+    <section class="flex flex-col justify-center items-center gap-20 mb-32 w-[80%] mx-auto max-sm:w-[90%]">
+        <div class="flex justify-center gap-6 w-full max-lg:flex-col">
+            <div class="p-[60px] rounded-[20px] add-shadow w-[48%] bg-gradient-to-b from-white/5 to-white/0 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+                <img src="./src/img/icon/blue.png" alt="" class="max-xs:h-10 max-xs:w-10">
+                <h3 class="text-[#ECECEC] my-4 font-medium text-[32px] max-md:text-2xl max-xs:text-xl">Analytics Dashboard</h3>
+                <p class="text-[#ECECEC] text-sm mb-7 leading-[23px] max-xs:text-xs max-xs:leading-5">Our Analytics Dashboard provides a clear and intuitive interface for you to easily analyze your data. From customizable graphs to real-time data updates, our dashboard offers everything you need to gain valuable insights.</p>
+                <a href="#" class="text-white text underline decoration-1 underline-offset-2 max-xs:text-sm">View dashboard</a>
+            </div>
+            <div class="p-[60px] rounded-[20px] add-shadow w-[48%] bg-gradient-to-b from-white/5 to-white/0 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+                <img src="./src/img/icon/purple.png" alt="" class="max-xs:h-10 max-xs:w-10">
+                <h3 class="text-[#ECECEC] my-4 font-medium text-[32px] max-md:text-2xl max-xs:text-xl">Digital Credit Tokens</h3>
+                <p class="text-[#ECECEC] text-sm mb-7 leading-[23px] max-xs:text-xs max-xs:leading-5">Reward your customers and incentivize engagement with our innovative digital credit tokens. Our tokens can be customized to match your branding, and are a flexible and scalable way to drive customer loyalty and encourage repeat business.</p>
+                <a href="#" class="text-white text underline decoration-1 underline-offset-2 max-xs:text-sm">View tokens</a>
+            </div>
+        </div>
+        <div class="p-[60px] rounded-[20px] add-shadow w-[98%] flex justify-between items-center bg-gradient-to-b from-white/5 to-white/0 max-2xl:flex-col max-2xl:gap-y-10 max-lg:w-full max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+            <div class="w-1/2 max-2xl:w-full">
+                <img src="./src/img/icon/pink.png" alt="" class="max-xs:h-10 max-xs:w-10">
+                <h3 class="text-[#ECECEC] my-4 font-medium text-[32px] max-md:text-2xl max-xs:text-xl">Code collaboration</h3>
+                <p class="text-[#ECECEC] text-sm mb-7 max-w-[460px] leading-[23px] max-xs:text-xs max-xs:leading-5">Our advanced code synchronization technology ensures that your data is always up-to-date and accurate, no matter where it's coming from. Whether you're integrating data from multiple sources or working with a team of developers, our synchronization technology makes it easy to collaborate and ensure that your data is consistent and reliable.</p>
+                <a href="#" class="text-white text underline decoration-1 underline-offset-2 max-xs:text-sm">View code collaboration</a>
+            </div>
+            <div class="w-1/2 flex justify-end max-2xl:w-full">
+                <img src="./src/img/imgCode.png" alt="" class="rounded-[20px] add-shadow">
+            </div>
+        </div>
+        <div class="p-[60px] rounded-[20px] add-shadow w-full flex flex-col justify-center items-center text-center gap-6 bg-gradient-to-b from-white/5 to-white/0 max-md:p-12 max-xs:px-[35px] max-xs:py-[30px]">
+            <div class="w-[70%] mx-auto max-xl:w-[85%] max-lg:w-full">
+                <h3 class="text-[#ECECEC] font-bold text-5xl leading-snug mb-6 max-lg:text-4xl max-lg:max-w-[595px] max-lg:mx-auto max-md:text-3xl max-sm:text-2xl">Our powerful analytics provides invaluable insights.</h3>
+                <p class="text-[#ECECEC] text-lg max-md:text-base max-xs:text-sm max-xs:leading-5">Unlock the power of data with our cutting-edge analytics product. Get instant insights with our user-friendly Analytics Dashboard, and take advantage of our innovative digital credit tokens to reward your customers and incentivize engagement.</p>
+            </div>
+            <button class="border text-[#ECECEC] py-2.5 px-6 rounded-full transition-transform hover:scale-105 max-sm:py-2 max-sm:px-5 max-xs:text-sm">Dowload the app</button>
+        </div>
+    </section>
+    <footer class="w-[78%] mx-auto">
+        <div class="flex justify-start gap-[120px] mb-[30px] max-lg:gap-[60px] max-md:flex-col max-md:gap-10">
+            <div class="flex flex-col gap-y-10">
+                <div class="mb-10 max-lg:mb-0">
+                    <h4 class="text-white font-medium text-2xl mb-5 max-lg:text-xl">Contact</h4>
+                    <p class="text-white font-light text-lg max-lg:text-base">Work inquires: work@vaultflow.com</p>
+                    <p class="text-white font-light text-lg max-lg:text-base">PR and speaking: press@vaultflow.com</p>
+                    <p class="text-white font-light text-lg max-lg:text-base">New business: newbusiness@vaultflow.com</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium text-2xl mb-5 max-lg:text-xl">Careers</h4>
+                    <p class="text-white font-light text-lg max-lg:text-base">Careers@vaultflow.com</p>
+                </div>
+            </div>
+            <div class="flex flex-col gap-y-10">
+                <div>
+                    <h4 class="text-white font-medium text-2xl mb-5 max-lg:text-xl">Adress</h4>
+                    <p class="text-white font-light text-lg max-lg:text-base">398 11th Street, Floor 2 <span class="block">San Francisco, CA 94103</span>
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-medium text-2xl mb-5 max-lg:text-xl">Social</h4>
+                    <ul>
+                        <li class="text-white font-light text-lg max-lg:text-base">Twitter</li>
+                        <li class="text-white font-light text-lg max-lg:text-base">Instagram</li>
+                        <li class="text-white font-light text-lg max-lg:text-base">Tiktok</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between items-center max-sm:flex-col max-sm:gap-y-4">
+            <p class="text-[#939393] font-light max-sm:text-sm max-sm:order-2">© 2023 Vaultflow. All Rights Reserved.</p>
+            <img src="./src/img/logo.png" alt="">
+        </div>
+    </footer>
     <div id="app"></div>
 </body>
 
